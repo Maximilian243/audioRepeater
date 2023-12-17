@@ -103,7 +103,7 @@ class Ui(QtWidgets.QMainWindow):
                 QMessageBox.about(self, "Успешно", "Поключено успешно")
         except Exception as exc:
             QMessageBox.warning(self, "Что-то пошло не так...",
-                                "Неверно введён адрес, отсутствует подключение к интернету")
+                                "Неверно введён адрес или отсутствует подключение к интернету")
 
     def updateLoop(self):
         def sendInfo():
